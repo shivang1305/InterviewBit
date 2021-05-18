@@ -16,6 +16,23 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 Make sure the returned intervals are also sorted.
 */
 
+import java.util.*;
+
+class Interval {
+    int start;
+    int end;
+
+    Interval() {
+        start = 0;
+        end = 0;
+    }
+
+    Interval(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
+}
+
 public class merge_intervals {
     public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
         

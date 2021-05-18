@@ -20,6 +20,8 @@ Hence, the output is 1.
 O(n) solution is expected.
 */
 
+import java.util.*;
+
 public class triplets_sum_range {
     public int solve(String[] A) {
         

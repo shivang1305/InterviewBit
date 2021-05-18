@@ -10,6 +10,23 @@ return [1,6],[8,10],[15,18].
 Make sure the returned intervals are sorted.
 */
 
+import java.util.*;
+
+class Interval {
+    int start;
+    int end;
+
+    Interval() {
+        start = 0;
+        end = 0;
+    }
+
+    Interval(int start, int end) {
+        this.start = start;
+        this.end = end;
+    }
+}
+
 public class merge_overlapping_intervals {
 
     public ArrayList<Interval> merge(ArrayList<Interval> intervals) {

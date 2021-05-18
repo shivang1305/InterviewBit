@@ -10,6 +10,8 @@ Output : 5
 Return 0 if the array contains less than 2 elements.
 */
 
+import java.util.*;
+
 public class max_consecutive_gap {
     public int maximumGap(final int[] A) {
         if(A.length < 2) // base case

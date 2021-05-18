@@ -12,6 +12,7 @@ If there are multiple possible answers ( like in the sample case above ), output
 If there is no duplicate, output -1
 */
 
+import java.util.*;
 
 public class duplicate_in_array {
     public int repeatedNumber(final int[] A) {
