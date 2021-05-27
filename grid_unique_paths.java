@@ -66,4 +66,15 @@ public class grid_unique_paths {
         
         return dp[0][0];
     }
+
+    public int solve(int m, int n) { // Optimal Solution : Time Complexity = O(M - 1) or O(N - 1), Space Cpmpexity = O(1)
+        int N = n + m - 2;
+        int r = m - 1;
+        double res = 1;
+
+        for(int i = 1; i <= r; i++) 
+            res *= (N - r + i)/i;
+        
+        return (int) res;
+    }
 }
